@@ -14,7 +14,7 @@
   background-image:url('lawreenl.github.io/pretty_background.jpeg');
   height: 700px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .jumbotron .container {
@@ -23,6 +23,7 @@
 }
 
 .jumbotron h1 {
+  text-align: center;
   color: white;
   font-size: 50px;  
   font-family: 'Shift', sans-serif;
@@ -30,6 +31,7 @@
 }
 
 .jumbotron p {
+  text-align: center;
   font-size: 20px;
   color: white;
 }
