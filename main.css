@@ -11,10 +11,10 @@
 }
 
 .jumbotron {
-  background-image:url('https://drive.google.com/open?id=0B4wLXxQIzmyGVkdiXzBZQ2JDTWFLd1A2YlJ3UWlfNUVMWHpn');
+  background-image:url('https://s-media-cache-ak0.pinimg.com/originals/ef/a5/4b/efa54b24be55c2ae77aa9e03e4043caf.gif');
   height: 1000px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 300px 100px; ;
 }
 
 .jumbotron .container {
