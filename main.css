@@ -14,7 +14,7 @@
   background-image:url('lawreenl.github.io/backgroun2.jpg');
   height: 1000px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .jumbotron .container {
