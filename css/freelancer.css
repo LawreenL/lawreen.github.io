@@ -32,6 +32,9 @@ h6 {
   text-transform: uppercase;
   font-weight: 700;
 }
+div.relative{
+    position: relative;
+}
 hr.star-light,
 hr.star-primary {
   padding: 0;
@@ -71,11 +74,11 @@ hr.star-primary:after {
 header {
   text-align: center;
   background: #18BC9C;
-  color: black;
+  color: white;
 }
 header .container {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding: 100px;
+  padding-bottom: 100px;
 }
 header img {
   display: block;
@@ -181,7 +184,7 @@ header .intro-text .skills {
   }
 }
 section {
-  padding: 50px 0;
+    padding: 50px 0;
     background: white;
     
 }
@@ -204,11 +207,17 @@ section.success {
 #about a{
     color: black;
 }
+#about container{
+  padding: 100px;
+}
 #project{
-    color: black;    
+    color: white;    
 }
 #project a{
-    color: black;
+    color: white;
+}
+#project container{
+  padding: 100px;
 }
 #artwork{
     background: white;
@@ -216,11 +225,19 @@ section.success {
 #artwork a{
     color: black;
 }
+#artwork container{
+    padding: 100px;
+    padding-right: 150px;
+}
 #fiction{
-    color: black;  
+    color: white;  
 }
 #fiction a{
-    color: black;
+    color: white;
+}
+#fiction container{
+    padding: 100px;
+    padding-right: 150px;
 }
 #portfolio .portfolio-item {
   margin: 0 0 15px;
@@ -324,7 +341,7 @@ form .row:first-child .floating-label-form-group {
     height: auto;
 }
 footer {
-  color: black;
+  color: white;
 }
 footer h3 {
   margin-bottom: 30px;
@@ -339,7 +356,7 @@ footer .footer-below {
   padding: 25px 0;
 }
 .btn-outline {
-  color: black;
+  color: white;
   font-size: 20px;
   border: transparent;
   background: transparent;
@@ -351,8 +368,8 @@ footer .footer-below {
 .btn-outline:active,
 .btn-outline.active {
   color: white;
-  background: black;
-  border: solid 2px black;
+  background: white;
+  border: solid 2px white;
 }
 .btn-primary {
   color: black;
@@ -398,8 +415,8 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   color: white;
-  background-color: black;
-  border-color: black;
+  background-color: white;
+  border-color: white;
   font-weight: 700;
 }
 .btn-success:hover,
@@ -431,18 +448,18 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: black;
-  border-color: black;
+  background-color: white;
+  border-color: white;
 }
 .btn-success .badge {
   color: white;
-  background-color: black;
+  background-color: white;
 }
 .btn-social {
   display: inline-block;
   height: 50px;
   width: 50px;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 100%;
   text-align: center;
   font-size: 20px;
