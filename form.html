@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="MFC215.css">
+        <title>Simple Form</title>
+        
+        <style>
+            form{
+                font-family: verdana;
+                color:rgb(0,0,0);
+                background-color : #fff4ee;
+                border: 1px ridge #fff4ee;
+                border-radius : 22px;
+                box-shadow : 10px 10px 5px #888888;
+                clear : both;
+                margin : 1% 4% auto;
+                padding : 1%;
+                width : 90%;
+            }
+            #submit2{
+                margin : 1% 4% auto;            
+            }
+            a{
+                margin : 25% 45% auto;
+                padding : 1%;
+            }
+        </style>
+    </head>
+<body>
+    <form id="form" method="post" action="mailto:lawreenl@buffalo.edu">
+        <fieldset>
+            <legend>Simple Form</legend>
+            <label for="firstname">First Name:</label>
+            <input id="firstname" name="firstname" type="text" placeholder="Enter your first name" required=""><br>
+            <label for="lastname">Last Name:</label>
+            <input id="lastname" name="lastname" type="text" placeholder="Enter your last name" required=""><br>
+            <label for="address">Address:</label>
+            <input id="address" name="address" type="text" placeholder="Enter your address"><br>
+            <label for="city">City:</label>
+            <input id="city" name="city" type="text" placeholder="Enter your city"><br>
+            <label for="state">State:</label>
+            <select id="state" name="state">
+                <option value="Select a state">Select your state:</option>
+                <option value="NY">NY</option>
+                <option value="TX">TX</option>
+                <option value="MA">MA</option>
+                <option value="OK">OK</option>
+                <option value="AR">AR</option>
+                <option value="PA">PA</option>
+            </select><br>
+            <label for="zip">Zip Code:</label>
+            <input id="zip" name="zip" type="text" placeholder="Enter your zip code" required=""><br class="clear">
+            <label for="phone">Phone Number:</label>
+            <input id="phone" name="phone" type="text" placeholder="Enter your phone number" required=""><br class="clear">
+            <label for="email">Email address:</label>
+            <input id="email" name="email" type="text" placeholder="Enter your email address" required=""><br class="clear">
+        </fieldset>
+            
+            <button id="submit2" name="submit" type="submit" value="Ok send my data!">Ok Send My Data!</button><br class="clear">
+    </form>
+    <p><a href="index.html">Home</a></p>
+<p>
+	<a href="http://jigsaw.w3.org/css-validator/check/referer">
+		<img style="border:0;width:88px;height:31px"
+			src="//jigsaw.w3.org/css-validator/images/vcss-blue"
+			alt="Valid CSS!" />
+	</a>
+</p>
+</body></html>
