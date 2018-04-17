@@ -13,7 +13,7 @@ body{
 }
 #social{
     text-align: center;
-    font-size:24px;
+    font-size:5vw;
     color:rgb(0,0,0);
     padding: 0.1%;
     width: 100%;
@@ -33,34 +33,5 @@ footer{
 }
 a{
   color:rgb(0,0,0);
-}
-@media (min-width: 858px) {
-    html {
-       font-size:28px;
-    }
-}
-
-@media (min-width: 780px) {
-    html {
-        font-size:28px;
-    }
-}
-
-@media (min-width: 702px) {
-    html {
-       font-size:28px;
-    }
-}
-
-@media (min-width: 724px) {
-    html {
-        font-size:28px;
-    }
-}
-
-@media (max-width: 623px) {
-    html {
-        font-size:28px;
-    }
 }
 /*comment*/
