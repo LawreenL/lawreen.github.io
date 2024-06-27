@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .map-container {
+            display: grid;
+            height: 100%;
+            position: relative;
+        }
+        #fmap,
+        #rectangle {
+            position: absolute;
+        }
+        #rectangle {
+            height:70vw;
+            width: 50vw;
+            top:1%;
+            right: 10px;
+            background:rgb(156, 156, 147);
+        }
+        h1{
+            padding-top: 5%;
+            text-align: center;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 3em;
+        }
+        h2{
+            padding-top: 5%;
+            padding-left: 5%;
+            padding-right: 5%;
+            line-height: 1.8;
+        }
+        .center {
+            max-width: 100%;
+            height: auto;
+        }
+        #workexp{
+            padding-top: 2%;
+            padding-left: 5%;
+            padding-right: 5%;
+            line-height: 1.8;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        h3,h4,p,a {
+            font-size: 1.2em; /* 14px/16=0.875em */
+        }
+        p,a {
+            padding-left: 2%; /* 14px/16=0.875em */
+        }
+        body {
+            background-image: url('bg.jpg');
+        }
+    </style>
+</head>
+<body>
+    <div id="map-container">
+        <div id="fmap">
+            <div id="map-info">
+                <img id="map-image" class="center" src="worldmap.png" alt="Fantasy Map" usemap="#portmap">
+                <!-- <p id="details">Hover over the map to see details.</p> -->
+            </div>
+            <map name="portmap">
+                <area target="_self" alt="Lawreen Latif" title="Lawreen Latif" href="i.html" coords="7,4,1051,1534" shape="rect">
+               </map>
+        </div>
+        <div id="rectangle">
+            <div>
+                <a href="i.html">
+                    <i class="fa fa-close" style="font-size:36px" padding-left="20%"></i>
+                </a>
+            </div>
+            <h1>Projects</h1>
+            <h2>
+                Below are a handful of the technical projects I have worked on.
+            </h2>
+            <div id="workexp">
+                <header>
+                    <h3>Mental health in youth</h3>
+                    <h4>Feb 2024</h4>
+                </header>
+                <p>lorem ipsum</p>
+            </div>
+            <div id="workexp">
+                <header>
+                    <h3>World Happiness Report</h3>
+                    <h4>Sept 2022</h4>
+                </header>
+                <p>lorem ipsum</p>
+            </div>
+            <div id="workexp">
+                <header>
+                    <h3>DAM</h3>
+                    <h4>May 2019</h4>
+                </header>
+                <p>Final project of our Software Engineering course. I worked with a team of 4 other students and the clients (students and professors) to build a resource management tool for our hardware library. 
+                    We noticed the library had tools that students did not know about or know how to request them and decided to build a web app to help facilitate this.
+                    Users would be able to view the inventory and reserve them for set periods of time.
+                    Users were also seperated into general users, managers and admins.
+                    Used Django to build the webapp. The main areas I worked on included the clients loans and reservations functionality as well as managing permissions between user types. 
+                    I also created the style guide and conducted A/B Testing. Our project was selected to use as a base for a live site for students to use.
+                    I also later went on to TA for this course!
+                </p>
+                <a href="https://dam.ubutils.com/">Visit the demo site!</a>
+                <a href="https://github.com/anandimous/DAM">Visit the GitHub Repo</a>
+            </div>
+            <div id="workexp">
+                <header>
+                    <h3>CSE199 Website Redesign</h3>
+                    <h4>Dec 2019 - Jan 2021</h4>
+                </header>
+                <p>
+                    Final project of our Human-Computer Interaction course. I worked with the clients (students and professors) to get user requirements and data. Also created the Style Guide, conducted A/B Testing and added the external resources feature on the site. Our project was chosen as the official website and is currently being used by ~500 students.
+                </p>
+                <a href="https://cse.buffalo.edu/cse199">Visit the live course website!</a>
+            </div>
+            <div id="workexp">
+                <header>
+                    <h3>Android Note Taking App</h3>
+                    <h4>May 2020 - Jul 2020</h4>
+                </header>
+                <p>Worked with 3 students in our Human-Computer Interaction course to build an android note-taking app. I worked on the UI Design and the Onboarding tutorial. Used SceneBuilder for wireframes.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="j.js"></script>
+    <script src="mapresizer.min.js"></script>
+    <script>
+        imageMapResize();
+    </script>
+</body>
+</html>

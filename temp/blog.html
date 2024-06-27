@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .map-container {
+            display: grid;
+            height: 100%;
+            position: relative;
+        }
+        #fmap,
+        #rectangle {
+            position: absolute;
+        }
+        #rectangle {
+            height:70vw;
+            width: 50vw;
+            top:1%;
+            right: 10px;
+            background:rgb(156, 156, 147);
+        }
+        h1{
+            padding-top: 5%;
+            text-align: center;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 3em;
+        }
+        h2, h3, p{
+            padding-top: 2%;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-bottom: 2%;
+            line-height: 1;
+        }
+        .center {
+            max-width: 100%;
+            height: auto;
+        }
+        #workexp{
+            margin: 0 auto;
+            /* padding-top: 2%; */
+            padding-left: 5%;
+            padding-right: 5%;
+            line-height: 1.8;
+            background-color: aliceblue;
+            width: 40vw;  
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        h3,h4,p,a {
+            font-size: 1.2em; /* 14px/16=0.875em */
+        }
+        a{
+            padding-bottom: 2%;
+
+        }
+        body {
+            background-image: url('bg.jpg');
+        }
+    </style>
+</head>
+<body>
+    <div id="map-container">
+        <div id="fmap">
+            <div id="map-info">
+                <img id="map-image" class="center" src="worldmap.png" alt="Fantasy Map" usemap="#portmap">
+                <!-- <p id="details">Hover over the map to see details.</p> -->
+            </div>
+            <map name="portmap">
+                <area target="_self" alt="Lawreen Latif" title="Lawreen Latif" href="i.html" coords="7,4,1051,1534" shape="rect">
+               </map>
+        </div>
+        <div id="rectangle">
+            <div>
+                <a href="i.html">
+                    <i class="fa fa-close" style="font-size:36px" padding-left="20%"></i>
+                </a>
+            </div>
+            <h1>Blog</h1>
+            <h2>
+                Blog coming soon...!
+            </h2>
+            <p>In the meantime, here are some articles I've been mentioned in!</p>
+            <a href="https://gazette.mun.ca/campus-and-community/community-builder-2/" target="_blank">
+                <div id="workexp">
+                    <header>
+                        <h3>Community builder</h3>
+                        <!-- <h4>Feb 2024 - Present</h4> -->
+                    </header>
+                    <p>May 28, 2024 — Master of science graduate excels in computer science and school spirit ... Spring graduate Lawreen Latif's formative years spent in the United ...</p>
+                </div>
+             </a>
+             <div><br></div>
+             <a href="https://www.bizjournals.com/buffalo/news/2020/06/25/buffalo-based-spatched-is-rolling-its-founder-sta.html" target="_blank">
+                <div id="workexp">
+                    <header>
+                        <h3>Buffalo-based Spatched is rolling...</h3>
+                        <!-- <h4>Feb 2024 - Present</h4> -->
+                    </header>
+                    <p>Jun 25, 2020 — Lawreen Latif, Dante Batson-Griggs Sr, and Deidre Batson-Griggs, founders, Spatched, a last-mile delivery service that has taken off during ...</p>
+                </div>
+             </a>
+             <div><br></div>
+             <a href="https://ubwp.buffalo.edu/csevoice/2018/11/02/ub-hacking-2018/" target="_blank">
+                <div id="workexp">
+                    <header>
+                        <h3>UB Hacking 2018</h3>
+                        <!-- <h4>Feb 2024 - Present</h4> -->
+                    </header>
+                    <p>Nov 2, 2018 — UB Hacking is our annual student-run hackathon hosted at the University at Buffalo. From a pool of 1000+ applicants from across the US ...</p>
+                </div>
+             </a>
+             <div><br></div>
+             <a href="https://engineering.buffalo.edu/home/academics/beyond/clubs.host.html/content/shared/engineering/computer-science-engineering/people/professional-and-student-organizations/ub-divtech.detail.html" target="_blank">
+                <div id="workexp">
+                    <header>
+                        <h3>UB DivTech</h3>
+                        <!-- <h4>Feb 2024 - Present</h4> -->
+                    </header>
+                    <p>UB DivTech, previously known as UB Scientista. UB Scientista founding members. From left: Doris Kwan, Shreya Parashare, Lawreen Latif ...</p>
+                </div>
+             </a>
+             <div><br></div>
+             <a href="https://ghc.anitab.org/our-ghc-18-scholars-3/" target="_blank">
+                <div id="workexp">
+                    <header>
+                        <h3>OUR GHC 18 SCHOLARS</h3>
+                        <!-- <h4>Feb 2024 - Present</h4> -->
+                    </header>
+                    <p>Sep 18, 2018 — GHC Scholar 2018, Squarespace </p>
+                </div>
+             </a>
+             <div><br></div>
+             <a href="https://www.bluegroup.systems/people/" target="_blank">
+                <div id="workexp">
+                    <header>
+                        <h3>Blue - A Systems Research Group</h3>
+                        <!-- <h4>Feb 2024 - Present</h4> -->
+                    </header>
+                    <p>Feb 11, 2016 — Collaborator on the Blue Research Group</p>
+                </div>
+             </a>
+        </div>
+    </div>
+
+    <script src="j.js"></script>
+    <script src="mapresizer.min.js"></script>
+    <script>
+        imageMapResize();
+    </script>
+</body>
+</html>
+
+
+<!-- https://engineering.buffalo.edu/computer-science-engineering/people/professional-and-student-organizations/ub-divtech.html -->

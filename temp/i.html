@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Map</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .map-container {
+            display: grid;
+            height: 100%;
+        }
+        .center {
+            max-width: 100%;
+            height: auto;
+        }
+        body {
+            background-image: url('bg.jpg');
+        }
+    </style>
+</head>
+<body>
+    <div class=”desktop”>
+        <div id="map-container">
+            <img id="map-image" class="center" src="worldmap.png" alt="Fantasy Map" usemap="#portmap">
+            <!-- <div id="map-info">
+                <p id="details">Hover over the map to see details.</p>
+            </div> -->
+            <map name="portmap">
+                <area target="" alt="About Me" title="AboutMe" href="aboutme.html" coords="208,389,251,358,308,384,311,541,264,568,210,550" shape="poly">
+                <area target="" alt="Work Experience" title="Work Experience" href="workexp.html" coords="613,503,617,440,640,365,673,387,702,389,706,360,725,308,742,346,763,373,807,396,829,376,847,405,852,443,861,516,782,568,725,566,671,570" shape="poly">
+                <area target="" alt="Projects" title="Projects" href="projects.html" coords="1379,731,1377,684,1406,637,1435,624,1480,610,1502,626,1540,626,1549,660,1560,682,1561,706,1523,740,1446,749,1415,754" shape="poly">
+                <area target="" alt="Skills and Certifications" title="Skills and Certifications" href="stats.html" coords="1666,700,1661,668,1673,626,1701,599,1740,590,1768,584,1818,590,1838,637,1845,678,1825,700,1789,724,1731,725,1695,729" shape="poly">
+                <area target="" alt="Leadership Experience" title="Leadership Experience" href="leadership.html" coords="1462,896,1420,879,1413,832,1426,792,1447,773,1491,758,1523,762,1585,773,1598,829,1574,876,1518,897" shape="poly">
+                <!-- <area target="" alt="dragon-minigame" title="Volunteer Experience" href="volunteering.html" coords="1028,948,1010,923,1020,890,1040,849,1082,850,1104,881,1127,887,1136,845,1185,814,1223,841,1247,805,1268,820,1268,847,1245,868,1180,903,1142,935,1084,950" shape="poly"> -->
+                <area target="" alt="Volunteer Experience" title="Volunteer Experience" href="volunteering.html" coords="322,1265,257,1236,244,1181,264,1125,293,1111,320,1084,360,1071,418,1104,454,1145,458,1207,420,1261" shape="poly">
+                <area target="_blank" alt="LinkedIn" title="LinkedIn" href="https://www.linkedin.com/in/lawreenl"coords="1426,1207,1341,1192,1315,1167,1319,1107,1335,1064,1366,1060,1417,1091,1444,1133,1476,1181" shape="poly">
+                <area target="_blank" alt="github" title="Github" href="https://github.com/LawreenL" coords="1511,1076,1446,1064,1415,1029,1427,961,1447,934,1489,926,1545,968,1570,1031,1588,1058" shape="poly">
+                <area target="_blank" alt="email" title="Email" href="mailto:lawreenl@mun.ca" coords="1617,1210,1543,1203,1494,1169,1518,1120,1523,1078,1560,1073,1596,1096,1617,1087,1650,1167,1670,1192" shape="poly">
+                <area target="" alt="Blog" title="Blog" href="blog.html" coords="778,1438,671,1426,649,1380,678,1335,727,1333,774,1350,800,1406" shape="poly">
+                <area target="_blank" alt="Resume" title="Resume" href="https://docs.google.com/document/d/1uzF9xv4JMxDsTwmnpgZjXaeOfD2ISRooVW6-efEw-xw/edit?usp=sharing" coords="1616,1261,2005,1485" shape="rect">
+    
+            </map>
+        </div>
+    </div>
+
+    <script src="j.js"></script>
+    <script src="mapresizer.min.js"></script>
+    <script>
+        imageMapResize();
+    </script>
+</body>
+</html>

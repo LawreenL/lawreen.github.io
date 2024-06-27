@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .map-container {
+            display: grid;
+            height: 100%;
+            position: relative;
+        }
+        #fmap,
+        #rectangle {
+            position: absolute;
+        }
+        #rectangle {
+            height:70vw;
+            width: 50vw;
+            top:1%;
+            right: 10px;
+            background:rgb(156, 156, 147);
+        }
+        h1{
+            padding-top: 5%;
+            text-align: center;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 3em;
+        }
+        h2, p{
+            /* padding-top: 5%; */
+            padding-left: 5%;
+            padding-right: 5%;
+            line-height: 1.8;
+        }
+        p{
+            font-size: 1.4em;
+        }
+        .center {
+            max-width: 100%;
+            height: auto;
+        }
+        .circular--portrait { 
+            width: 200px; 
+            padding:5%;
+            overflow: hidden; 
+            border-radius: 50%; 
+        } 
+        .circular--portrait img { 
+            width: 100%; 
+        }
+
+        body {
+            background-image: url('bg.jpg');
+        }
+    </style>
+</head>
+<body>
+    <div id="map-container">
+        <div id="fmap">
+            <div id="map-info">
+                <img id="map-image" class="center" src="worldmap.png" alt="Fantasy Map" usemap="#portmap">
+                <!-- <p id="details">Hover over the map to see details.</p> -->
+            </div>
+            <map name="portmap">
+                <area target="_self" alt="Lawreen Latif" title="Lawreen Latif" href="i.html" coords="7,4,1051,1534" shape="rect">
+               </map>
+        </div>
+        <div id="rectangle">
+            <div>
+                <a href="i.html">
+                    <i class="fa fa-close" style="font-size:36px" padding-left="20%"></i>
+                </a>
+            </div>
+            <h1>Hello world!</h1>
+
+            <div class="circular--portrait">
+                <img src="latif.jpg" /> 
+            </div>
+
+            <h2>
+                Hi! My name is Lawreen Latif. Welcome to my world!
+            </h2>
+            <p>
+                I am an experienced leader with a knack for driving successful projects and product launches. 
+                Currently a Residence Coordinator at Memorial University, I amm adept at fostering community, 
+                team collaboration, and ensuring customer satisfaction. 
+                Former Product Specialist with a proven track record in strategic planning 
+                and cross-functional teamwork. I am eager to leverage my skills in project management and 
+                product development to excel as a Project or Product Manager. Passionate about driving innovation 
+                and delivering exceptional results in dynamic environments.
+            </p>
+        </div>
+    </div>
+
+    <script src="j.js"></script>
+    <script src="mapresizer.min.js"></script>
+    <script>
+        imageMapResize();
+    </script>
+</body>
+</html>

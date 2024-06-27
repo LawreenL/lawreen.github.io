@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Skills and Certifications</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .map-container {
+            display: grid;
+            height: 100%;
+            position: relative;
+        }
+
+        #fmap,
+        #rectangle {
+            position: absolute;
+        }
+
+        #rectangle {
+            height: 90vw;
+            width: 50vw;
+            top: 1%;
+            right: 10px;
+            background: rgb(156, 156, 147);
+        }
+
+        h1 {
+            padding-top: 5%;
+            text-align: center;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 3em;
+        }
+
+        h2 {
+            padding-top: 5%;
+            padding-left: 5%;
+            padding-right: 5%;
+            line-height: 1.8;
+        }
+
+        h3,
+        p {
+            font-size: 1.2em;
+            /* 14px/16=0.875em */
+        }
+
+        .center {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #workexp {
+            padding-top: 2%;
+            padding-left: 5%;
+            padding-right: 5%;
+            line-height: 1.8;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Make sure that padding behaves as expected */
+        * {
+            box-sizing: border-box
+        }
+
+        /* Container for skill bars */
+        .container {
+            width: 100%;
+            /* Full width */
+            background-color: #ddd;
+            /* Grey background */
+        }
+
+        .skills {
+            text-align: right;
+            /* Right-align text */
+            padding-top: 10px;
+            /* Add top padding */
+            padding-bottom: 10px;
+            /* Add bottom padding */
+            color: white;
+            /* White text color */
+        }
+
+        .html {
+            width: 90%;
+            background-color: #808080;
+        }
+
+        /* Green */
+        .css {
+            width: 90%;
+            background-color: #808080;
+        }
+
+        /* Blue */
+        .js {
+            width: 75%;
+            background-color: #808080;
+        }
+
+        /* Red */
+        .sql {
+            width: 80%;
+            background-color: #808080;
+        }
+
+        /* Dark Grey */
+        .react {
+            width: 75%;
+            background-color: #808080;
+        }
+
+        /* Blue */
+        .python {
+            width: 85%;
+            background-color: #808080;
+        }
+
+        /* Red */
+
+        #rcorners {
+            border-radius: 15px;
+            border: 6px solid #808080;
+            ;
+            padding: 0.5em;
+            /* width: 450px;
+            height: 40px;     */
+        }
+
+        .rect {
+            height: 2.5em;
+            /* width: 10em; */
+            display: inline-block;
+            /* border-radius: 25px;
+            border: 2px solid #808080; */
+            padding: 20px;
+            /* display: flex; */
+            /* justify-content: center;
+            align-items: center; */
+        }
+
+        body {
+            background-image: url('bg.jpg');
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map-container">
+        <div id="fmap">
+            <div id="map-info">
+                <img id="map-image" class="center" src="worldmap.png" alt="Fantasy Map" usemap="#portmap">
+                <!-- <p id="details">Hover over the map to see details.</p> -->
+            </div>
+            <map name="portmap">
+                <area target="_self" alt="Lawreen Latif" title="Lawreen Latif" href="i.html" coords="7,4,1051,1534"
+                    shape="rect">
+            </map>
+        </div>
+    </div>
+    <div id="rectangle">
+        <div>
+            <a href="i.html">
+                <i class="fa fa-close" style="font-size:36px" padding-left="20%"></i>
+            </a>
+        </div>
+        <h1>My stats</h1>
+        <div id="workexp">
+            <h3>Technical Skills</h3>
+            <p>HTML</p>
+            <div class="container">
+                <div class="skills html">90%</div>
+            </div>
+
+            <p>CSS</p>
+            <div class="container">
+                <div class="skills css">90%</div>
+            </div>
+
+            <p>JavaScript</p>
+            <div class="container">
+                <div class="skills js">75%</div>
+            </div>
+
+            <p>SQL</p>
+            <div class="container">
+                <div class="skills sql">80%</div>
+            </div>
+
+            <p>React</p>
+            <div class="container">
+                <div class="skills react">75%</div>
+            </div>
+
+            <p>Python</p>
+            <div class="container">
+                <div class="skills python">85%</div>
+            </div>
+        </div>
+
+        <div id="workexp">
+            <h3>Professional Skills</h3>
+            <div class="rect">
+                <p id="rcorners">Communication</p>
+            </div>
+            <div class="rect">
+                <p id="rcorners">Project Management</p>
+            </div>
+            <div class="rect">
+                <p id="rcorners">Problem Solving</p>
+            </div>
+            <div class="rect">
+                <p id="rcorners">Conflict Resolution</p>
+            </div>
+            <div class="rect">
+                <p id="rcorners">Agile Development</p>
+            </div>
+            <div class="rect">
+                <p id="rcorners">Curiosity</p>
+            </div>
+            <div class="rect">
+                <p id="rcorners">Empathy</p>
+            </div>
+        </div>
+        <div id="workexp">
+            <h3>Certifications</h3>
+        </div>
+        <div id="workexp">
+            <h3>Awards</h3>
+            <h3>
+                Entrepreneurship Undergraduate Student Award
+            </h3>
+            <p>
+                Issued by Department of Computer Science and Engineering · May 2019<br>
+                Awarded to one graduating senior who exhibit exceptional entrepreneurial activity
+                during their stay at UB CSE.
+            </p>
+            <h3>
+                GHC Scholar
+            </h3>
+            <p>
+                Issued by AnitaB.org · Jul 2018<br>
+                Anita Borg GHC Scholar award sponsored by Squarespace
+            </p>
+            <h3>
+                Beth Moran Cheshire Scholarship
+            </h3>
+            <p>
+                Issued by Department of Computer Science and Engineering · Apr 2018<br>
+                Awarded to one or more female CSE undergrads with strong personal character, experiencing or
+                having overcome adversity. This award was developed on behalf of the late Beth Cheshire, who was
+                challenged with illness while completing her CS degree.
+            </p>
+            <h3>
+                SEAS Student Leaders Award
+            </h3>
+            <p>
+                Issued by UB School of Engineering and Applied Sciences (SEAS) · Apr 2018<br>
+                Awarded to exceptional student leaders in their club or organization and who are contributing
+                significantly to the mission of the club/organization and the School of Engineering and Applied
+                Sciences.Awarded to exceptional student leaders in their club or organization and who are contributing
+                significantly to the mission of the club/organization and the School of Engineering and Applied
+                Sciences.
+            </p>
+            <h3>
+                Leaders in Excellence Scholarships
+            </h3>
+            <p>
+                Issued by UB Engineering Alumni Association · Oct 2017<br>
+                This scholarship recognizes “leaders in excellence” to encourage them to develop spirit and
+                loyalty to the school. Awarded for the caliber of students and their contributions to UB and
+                community groups.
+            </p>
+            <h3>
+                Dean's List Fall 2015, Spring 2017
+            </h3>
+            <p>
+                Issued by University at Buffalo (UB) · Dec 2015
+            </p>
+            <h3>
+                International Merit Scholarship
+            </h3>
+            <p>
+                Issued by University at Buffalo (UB) · Sep 2015
+            </p>
+        </div>
+    </div>
+
+    <script src="j.js"></script>
+    <script src="mapresizer.min.js"></script>
+    <script>
+        imageMapResize();
+    </script>
+</body>
+
+</html>

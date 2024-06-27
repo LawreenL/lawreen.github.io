@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Work Experience</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .map-container {
+            display: grid;
+            height: 100%;
+            position: relative;
+        }
+        #fmap,
+        #rectangle {
+            position: absolute;
+        }
+        #rectangle {
+            height:70vw;
+            width: 50vw;
+            top:1%;
+            right: 10px;
+            background:rgb(156, 156, 147);
+        }
+        h1{
+            padding-top: 5%;
+            text-align: center;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 3em;
+        }
+        h2{
+            padding-top: 5%;
+            padding-left: 5%;
+            padding-right: 5%;
+            line-height: 1.8;
+        }
+        .center {
+            max-width: 100%;
+            height: auto;
+        }
+        #workexp{
+            padding-top: 2%;
+            padding-left: 5%;
+            padding-right: 5%;
+            line-height: 1.8;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        h3,h4,ul {
+            font-size: 1.2em; /* 14px/16=0.875em */
+        }
+        ul {
+            padding-left: 2%; /* 14px/16=0.875em */
+        }
+        body {
+            background-image: url('bg.jpg');
+        }
+    </style>
+</head>
+<body>
+    <div id="map-container">
+        <div id="fmap">
+            <div id="map-info">
+                <img id="map-image" class="center" src="worldmap.png" alt="Fantasy Map" usemap="#portmap">
+                <!-- <p id="details">Hover over the map to see details.</p> -->
+            </div>
+            <map name="portmap">
+                <area target="_self" alt="Lawreen Latif" title="Lawreen Latif" href="i.html" coords="7,4,1051,1534" shape="rect">
+               </map>
+        </div>
+        <div id="rectangle">
+            <div>
+                <a href="i.html">
+                    <i class="fa fa-close" style="font-size:36px" padding-left="20%"></i>
+                </a>
+            </div>
+            <h1>My Work Experience</h1>
+            <h2>
+                My work experience spans several areas and I am grateful to have had opportunities that 
+                helped hone a wide array of skills.
+            </h2>
+            <div id="workexp">
+                <header>
+                    <h3>Residence Coordinator, Memorial University, NL</h3>
+                    <h4>Aug 2021 – Present</h4>
+                </header>
+                <ul>
+                    <li> Lead a team of 4 Resident Assistants and 10 House Council members to ensure the safety and well-being of 90+ residents</li>
+                    <li> Conduct staff interviews and recruitment, conduct performance reviews, and provide direction and guidance to student staff</li>
+                    <li> Ensure compliance with Housing Office guidelines and promptly report incidents for a supportive living environment</li>
+                    <li> Address diverse needs effectively by planning a diverse range of programs and activities for a well-rounded experience</li>
+                    <li> Started the Curtis House Instagram page to document the community in the House for years to come and improve retention </li>
+                </ul>
+            </div>
+            <div id="workexp">
+                <header>
+                    <h3>Product Development Manager (Co-Op), Polyamyna, NL</h3>
+                    <h4>Jan 2023 – April 2023</h4>
+                </header>
+                <ul>
+                    <li> Conducted comprehensive market research on long-term care facilities and presented actionable insights to management</li>
+                    <li> Analyzed user feedback and data to identify key areas for product development and improvement</li>
+                    <li> Developed and implemented a robust data security plan to ensure compliance and protect user information</li>
+                    <li> Designed and presented initial wireframes to senior management, laying the foundation for product development</li>
+                </ul>
+            </div>
+            <div id="workexp">
+                <header>
+                    <h3>Product Specialist, Fenix, Dubai, UAE</h3>
+                    <h4>Feb 2021 – May 2022</h4>
+                </header>
+                <ul>
+                    <li>Orchestrated product launches in several countries, ensuring alignment with company objectives and customer needs</li>
+                    <li>Facilitated collaboration between engineering, design, and marketing teams to prioritize tasks and exceed customer expectations</li>
+                    <li>Acted as the primary liaison between development teams and customers, gathered feedback, and drove product improvements</li>
+                    <li>Analyzed products and user experience using Jupyter Notebooks and Pandas to find leakages and identify improvements</li>
+                </ul>
+            </div>
+            <div id="workexp">
+                <header>
+                    <h3>Co-Founder & CTO, Spatched, Buffalo, NY</h3>
+                    <h4>Dec 2019 - Jan 2021</h4>
+                </header>
+                <ul>
+                    <li>Managed a team of 5 developers to build the web app using the MERN stack following Agile Principles</li>
+                    <li>Designed wireframes using HCI principles to create a user-friendly and accessible experience</li>
+                    <li>Led marketing campaigns, increased customer reach, built 4 partnerships and serviced 1500+ deliveries</li>
+                </ul>
+            </div>
+            <div id="workexp">
+                <header>
+                    <h3>Product Support Engineer, Peanut Butter, Buffalo, NY</h3>
+                    <h4>May 2020 - Jul 2020</h4>
+                </header>
+                <ul>
+                    <li>Initiated product enhancement procedures by creating and reviewing product requirements documents.</li>
+                    <li>Created and maintained product support database and help articles to ensure a better user experience.</li>
+                    <li>Created queries and weekly support reviews to measure response time and customer satisfaction, maintained customer satisfaction of >90% on average.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="j.js"></script>
+    <script src="mapresizer.min.js"></script>
+    <script>
+        imageMapResize();
+    </script>
+</body>
+</html>
